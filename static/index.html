@@ -1,0 +1,73 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>XPRESS Deployment Monitor</title>
+	<link rel="stylesheet" type="text/css" href="/static/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="/static/app.css">
+</head>
+<body>
+	<div class="nav">
+		<h1>XPRESS Deployment Monitor</h1>
+		<p>Ambiente de producción</p>
+	</div>
+	<div class="container">
+		<h3>Estado Deploy Manager</h3>
+		<div id="contaner-deploym">
+			Cargando...
+		</div>
+		<h3>Espacio Libre Deploy Manager</h3>
+		<div id="contaner-space">
+			Cargando...
+		</div>
+		<h3>QManagers</h3>
+		<div id="contaner-qmanager">
+			Cargando...
+		</div>
+	</div>
+	<script id="template_deploy" type="text/template">
+		<p class="state">Actualizado: <span>{{ date }}</span></p>
+		<table class="table table-hover">
+			<tbody> 
+				{{#data}}
+				<tr>
+					<td><a href="{{ url }}" target="_blank">{{ name }}</a></td>
+					<td>{{ state }}</td>
+				</tr>
+				{{/data}}
+			</tbody>
+		</table>
+	</script>
+	<script id="template_qmanager" type="text/template">
+		<p class="state">Actualizado: <span>{{ date }}</span></p>
+		<table class="table table-hover">
+			<tbody> 
+				{{#data}}
+				<tr>
+					<td>{{ name }}</td>
+					<td>{{ host }}</td>
+					<td>{{ state }}</td>
+				</tr>
+				{{/data}}
+			</tbody>
+		</table>
+	</script>
+	<script id="template_space" type="text/template">
+		<p class="state">Actualizado: <span>{{ date }}</span></p>
+		<table class="table table-hover">
+			<tbody> 
+				{{#data}}
+				<tr>
+					<td>{{ name }}</td>
+					<td>{{ mount }}</td>
+					<td>{{ free_space }}</td>
+				</tr>
+				{{/data}}
+			</tbody>
+		</table>
+	</script>
+	<script type="text/javascript" src="/static/jquery.min.js"></script>
+	<script type="text/javascript" src="/static/mustache.js"></script>
+	<script type="text/javascript" src="/static/app.js"></script>
+</body>
+</html>

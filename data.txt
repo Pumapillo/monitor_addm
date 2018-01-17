@@ -1,0 +1,14 @@
+
+XESS
+1. Ver disponibilidad de deploy manager producción
+2. Ver disponibilidad de deploy manager contigencia
+*. Ver espacio disponible para instalacion de dedalo
+*. Ver disponibilidad de qmanager producción
+*. Ver disponibilidad de qmanager contigencia
+
+
+Prod server: JMX port
+PNETP07: 8883
+PNETP05: 8880
+PTXESAIXP01: 8879
+PQXESAIXP01: 8879

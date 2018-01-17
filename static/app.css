@@ -1,0 +1,38 @@
+/*
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	color: rgb(40,40,40);
+}
+*/
+.nav {
+	background: rgb(40,40,40);
+	text-align: center;
+	color: rgb(253,253,253);
+	padding: 8px;
+}
+
+.container {
+	width: 600px;
+	margin: 20px auto;
+}
+
+.container h3 {
+	text-align: center;
+	font-size: 25px;
+	margin-bottom: 8px;
+}
+
+.nav h1 {
+	color: rgb(253,253,253);
+}
+.nav p {
+	color: rgb(253,253,253);
+}
+
+.state {
+	text-align: right;
+	font-size: 10px;
+	color: rgb(150,150,150);
+}

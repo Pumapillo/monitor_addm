@@ -1,0 +1,16 @@
+{
+  "name": "eduproxy",
+  "version": "1.0.0",
+  "main": "server.js",
+  "keywords": [],
+  "author": "edu cacho",
+  "license": "open source",
+  "dependencies": {
+    "express": "^4.16.1",
+    "request": "^2.83.0",
+    "request-ssl": "0.0.14"
+  },
+  "scripts": {
+    "start": "node server.js"
+  }
+}
